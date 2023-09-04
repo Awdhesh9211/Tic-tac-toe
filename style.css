@@ -1,0 +1,83 @@
+*{
+  color:white;
+  font-family: sans-serif;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+}
+.align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  text-align: center;
+  padding-top: 5vh;
+  background-color: #252a34;
+}
+.container{
+  width: 170px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container h3{
+  margin: 0;
+}
+.container .turnBox{
+  border: 3px solid white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 85px;
+  height: 40px;
+  margin-top: 1rem;
+}
+.bg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85px;
+  height: 42px;
+  background-color: greenyellow;
+  z-index: -1;
+}
+.board{
+  height: 500px;
+  width: 500px;
+  margin: 30px auto;
+  border: 2px solid white;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+}
+.box{
+  cursor: pointer;
+  font-size: 4vmax;
+  font-weight: 700;
+  border: 2px solid white;
+}
+.box:hover{
+  background-color:greenyellow;
+}
+#result{
+  font-size: 3vmax;
+  font-weight: 600;
+}
+#playAgain{
+  cursor: pointer;
+  background-color: greenyellow;
+  padding: 10px 25px;
+  border: none;
+  font-size: 3vmax;
+  border-radius: 5px;
+  color: #000;
+}
+#playAgain:hover{
+  padding: 10px 40px;
+  background-color: crimson;
+  color: #000;
+}
